@@ -1,0 +1,15 @@
+{
+  "name": "deck",
+  "local_port": 51513,
+  "entrypoint": "bun run dev",
+  "publish": {
+    "label": "deck",
+    "type": "http",
+    "entrypoint": "bun run prod",
+    "published_port": 56310,
+    "env": {
+      "NODE_ENV": "production",
+      "ZO_CLIENT_IDENTITY_TOKEN": "none"
+    }
+  }
+}

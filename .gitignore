@@ -1,0 +1,15 @@
+# dependencies
+deck/node_modules/
+
+# build output
+deck/dist/
+
+# standalone export (now lives at docs/index.html for GitHub Pages)
+second-brain-deck.html
+
+# Zo-specific (not portable)
+deck/.claude/
+.zo/
+
+# logs
+*.log
