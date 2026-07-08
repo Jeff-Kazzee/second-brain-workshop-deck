@@ -14,7 +14,7 @@ The deck teaches the Minimal Zo Brain method, which lives at `github.com/Jeff-Ka
 - `spec.md`: the method the deck teaches. Any file name, folder shape, or code shown on screen must match this.
 - `build-deck.prompt.md`: the build prompt that produced the deck. The instructions, constraints, and design direction.
 - `_plan.md`: the working plan with critique checkpoint and current state.
-- `docs/index.html`: the standalone single-file export. Self-contained, runs offline by double-clicking. Rebuilt from `deck/`. Also serves as the GitHub Pages source.
+- `docs/index.html`: the standalone single-file export. Self-contained, runs offline by double-clicking. All images inlined as base64. Rebuilt from `deck/`.
 - `deck/`: the Zo Site (the live build). React + Vite + Bun + TypeScript + Tailwind. See `deck/README.md` for technical detail.
   - `deck/src/deck/Deck.tsx`: the deck. 12 slide components, keyboard nav, chrome, shared primitives.
   - `deck/src/styles.css`: deck design tokens appended to the base stylesheet.
@@ -66,7 +66,7 @@ Do not relitigate these without a real reason.
 
 - Deck built. 12 slides. Typecheck clean. Keyboard nav and hash deep-links verified.
 - Seven illustrations generated and inlined.
-- Standalone export at `docs/index.html` (about 5.4 MB, fully self-contained). Also the GitHub Pages source.
+- Standalone export at `docs/index.html` (about 5.4 MB, fully self-contained, all images inlined).
 - Published as a public Zo Site at `https://deck-jeffkazzee.zocomputer.io`.
 - Jeff reviewed the look and approved building all 12.
 

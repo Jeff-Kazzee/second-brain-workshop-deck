@@ -44,7 +44,9 @@ The deck ships in two forms that render identically.
 
 We built both because the use cases differ. The site is for iterating and for projecting from a browser with a connection. The standalone file is for handing to someone, dropping in a folder, or running on a machine with no network.
 
-The standalone file is also served via GitHub Pages at `https://jeff-kazzee.github.io/second-brain-workshop-deck/`. Same file, viewed online instead of downloaded.
+## The repo
+
+This project lives in a private GitHub repo: `Jeff-Kazzee/second-brain-workshop-deck`. The source is versioned there and agents edit it through the working copy. The Zo Site at `https://deck-jeffkazzee.zocomputer.io` is the public view. The standalone HTML at `docs/index.html` is the downloadable, offline deck with all seven images baked in.
 
 ### How to rebuild the standalone export
 
@@ -55,7 +57,7 @@ bunx vite build
 bun run scripts/inliner.ts
 ```
 
-The build produces `deck/dist/`. The inliner reads `dist/`, inlines the JS and CSS, converts every image to a base64 data URI, and writes `../docs/index.html` (the GitHub Pages source and the downloadable standalone deck). It uses function-based replacements so `$&` patterns inside the bundled JS are not reinterpreted, and it escapes literal `</script>` so the inlined module tag does not close early. Both guards are load-bearing. Do not switch them to string replacements.
+The build produces `deck/dist/`. The inliner reads `dist/`, inlines the JS and CSS, converts every image to a base64 data URI, and writes `../docs/index.html` (the downloadable standalone deck). It uses function-based replacements so `$&` patterns inside the bundled JS are not reinterpreted, and it escapes literal `</script>` so the inlined module tag does not close early. Both guards are load-bearing. Do not switch them to string replacements.
 
 ## The voice gate
 
@@ -70,7 +72,7 @@ The honesty rule is hard. Never fabricate lived experience, metrics, quotes, or 
 - `build-deck.prompt.md`: the build prompt and constraints.
 - `_plan.md`: the working plan and critique trail.
 - `AGENTS.md`: the project control file. Read it first when working in this folder.
-- `docs/index.html`: the standalone export (GitHub Pages source, also downloadable).
+- `docs/index.html`: the standalone export (downloadable, offline, all images baked in).
 - `deck/`: the Zo Site. See `deck/README.md` for technical detail.
 
 ## Credits
