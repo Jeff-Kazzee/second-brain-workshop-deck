@@ -42,3 +42,24 @@ Open flag for Jeff: Ethan loses his dedicated slides (Four C's, three levels, se
 
 ## Definition of done
 12-slide deck, voice-gated, each slide one idea + one pull-line, built as a navigable visual (keyboard arrows + hash deep-links), with imagery on the anchor slides. Standalone single-file HTML export that runs offline. Published as a public Zo Site. Project documented. Jeff approved the look and the publish.
+
+## Recut sprint: four shorter deck variants (2026-07-10)
+
+### Objective
+Turn the current deck into four separate shorter deck variants that teach the same workshop more clearly for true beginners, using the existing deck source, workshop research, and the new image probes.
+
+### Phases
+- Phase 1: define the four teaching angles and compress the core concepts into tighter slide spines
+- Phase 2: build the four variants into the site as real routed decks with shared navigation and visual language
+- Phase 3: critique the variants against workshop intent, fix weak spots, and leave a clear recommendation
+
+### Task list
+- [x] Read current deck copy, critique notes, recut notes, and voice rules
+- [~] Define four shorter deck variants with distinct teaching tradeoffs
+- [ ] Implement the four variants as real deck routes in `deck/`
+- [ ] Add a selector route so Jeff can compare them quickly
+- [ ] Run typecheck and a build check
+- [ ] Critique the variants, find three real problems, and tighten them
+
+## Critique
+Pause after the first working routed version exists. Check whether the variants are actually distinct, whether they still teach the machine model before the method, and whether any slide is still doing backup-argument work instead of teaching one idea.

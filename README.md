@@ -68,12 +68,26 @@ The honesty rule is hard. Never fabricate lived experience, metrics, quotes, or 
 ## Files in this folder
 
 - `slides-copy.md`: the canonical copy. Source of truth.
+- `slides-copy-recut-option-2.md`: first shorter recut draft, built around teaching the machine model before the method.
+- `deck-critique-recuts.md`: the blunt critique of the 12-slide deck and the recut logic behind the shorter variants.
 - `spec.md`: the method the deck teaches.
 - `build-deck.prompt.md`: the build prompt and constraints.
 - `_plan.md`: the working plan and critique trail.
 - `AGENTS.md`: the project control file. Read it first when working in this folder.
 - `docs/index.html`: the standalone export (downloadable, offline, all images baked in).
 - `deck/`: the Zo Site. See `deck/README.md` for technical detail.
+
+## Recut variants
+
+The Zo Site now carries a second comparison track: four shorter deck variants built from the same workshop sources, the critique pass, and the image probes.
+
+- `/recuts`: selector page for all four variants
+- `/context-first`: the strongest all-around cut, starting with what the model can actually see
+- `/trust-first`: the version that leads with privacy, control, and approval gates
+- `/workshop-first`: the version tuned for live pacing and first success
+- `/four-slide-cut`: the hardest trim, for a room where the hosts carry more verbally
+
+These routes are comparison artifacts, not the new canonical deck yet. They exist so Jeff can judge shorter teaching shapes inside the actual site before committing to a rebuild.
 
 ## Credits
 

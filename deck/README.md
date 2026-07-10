@@ -27,6 +27,18 @@ A 12-slide teaching deck for the July 16 "Build Your Second Brain in Two Hours" 
 11. The loops that keep it alive (image-led, compounding spiral illustration + maintenance pills)
 12. Close (type-led, links)
 
+### Recut comparison routes
+
+The site now also exposes four shorter comparison decks. These are not replacements for the 12-slide deck yet. They are deliberate teaching cuts Jeff can compare in a browser.
+
+- `/recuts` — selector page for the four variants
+- `/context-first` — 5 slides, strongest all-around cut
+- `/trust-first` — 5 slides, safety and control first
+- `/workshop-first` — 6 slides, live-workshop pacing first
+- `/four-slide-cut` — 4 slides, hardest trim
+
+These routes share a generic renderer in `src/deck/RecutDeck.tsx` and variant data in `src/deck/recut-data.ts`.
+
 Live-demo "on screen" cues (terminal, editor split, DVD shelf photo, Zo chat panel) are captions on the anchor slides, not generated screenshots. The hosts screen-share those live.
 
 ### Design system
